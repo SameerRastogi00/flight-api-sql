@@ -4,6 +4,9 @@ const user=require('../models/user')
 const flight=require('../models/flight')
 const ticket=require('../models/ticket')
 
+user.hasMany(ticket,{as:'tickets',foreignKey:'userId'})
+    ticket.belongsTo(user,{as:"user",foreignKey:'userId'})
+
 
 rout.post('/user',async (req,res)=>
 {
