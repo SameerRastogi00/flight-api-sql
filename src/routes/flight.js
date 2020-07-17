@@ -29,7 +29,7 @@ rout.get('/flight',async(req,res)=>
     var z=[]
     for(var i=0;i<x.length;i++)
     {
-        z.push(x[i].dataValues.from)  
+        z.push(x[i].dataValues.location)  
     }
 
     let c=[]
