@@ -15,7 +15,4 @@ app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
 
-// const Flight = require('./models/flight')
-// const User = require('./models/user')
-// const ticket=require('./models/ticket')
 
